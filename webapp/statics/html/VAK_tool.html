@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <head>
+        <title>VAK Analyzer Tool</title>
+        <link rel="stylesheet" href="/css/VAK.css">
+    </head>
+
+    <body>
+        <div class="logoANDtagline">
+            <img src="/images/logo.png" width="260" height="65" alt="VAKITY logo" />
+            <h1>Analyzing Learning Styles From Afar</h1>
+        </div>
+
+        <div class="instructions">
+            <h2>Instructions:</h2>
+            <p><em class="special_body">To analyze some text, enter a sample below. 
+            We recommend three paragraphs minimum for decent results.</em></p>
+        </div>
+
+        <div class="left_twothird">        
+            <h2>Paste Text Below:</h2> 
+            <p>
+                <form action="Analyze" method="post">
+                    <textarea name="writing_sample" rows="20" cols="50">
+                    </textarea>
+                    <input type="submit" value="Analyze" />
+                </form>
+                
+            </p>
+        </div>
+
+        <div class="right_third">
+            <h2>Analysis:</h2>
+            <p>{{ analysis }}</p>
+        </div>
+
+    </body>
+</html>
+{% endautoescape %}
