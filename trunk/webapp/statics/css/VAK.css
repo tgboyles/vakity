@@ -1,0 +1,183 @@
+/*   logo_green 		#83C084 */
+/*   logo_green_darker_2 	#699A6A */
+/*   logo_green_darker_4 	#4F734F */
+/*   logo_peach			#EBAB7D or #E9AA81*/
+/*	 logo_blue			#807FFF */
+/*	 logo_blue_green			#4165B9 */
+
+
+
+wrapper {
+	position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */}
+
+body {
+    margin:0;
+	padding:0;
+	width:100%;
+	border:0;			/* This removes the border around the viewport in old versions of IE */
+	min-width:600px;    	/* Minimum width of layout - remove line if not required */
+					/* The min-width property does not work in old versions of Internet Explorer */
+	font-size:100%;
+    font-family: helvetica;
+    color: #4F734F;
+    background-color: #4062C3;}
+
+	
+.logoANDtagline {
+    padding-left: 1.0416667%;
+    padding-top: 0.52083335%;
+    border-style: solid;
+    border-width: 0.52083335%;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    margin-top: 3%;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-bottom: 1.1%;
+	 -moz-border-radius: 15px;
+    border-radius: 15px;}
+
+ /*Tool: Section for instructions */
+.instructions {
+    padding-left: 1.56250005%;
+    border-style: solid;
+    border-width: 0.52083335%;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 0;
+    margin-bottom: 0;
+    -moz-border-radius: 15px;
+    border-radius: 15px;}  
+
+
+/*special tool instructions*/
+.special_body {
+	text-style: normal;
+	text-size: 1em; 
+	line-height: .5;
+	}
+    
+h1 {
+    color: #EBAB7D;
+    padding-left: 76px;
+    margin-top: 0px;
+    margin-right: 3%;
+    font-size: 1em;
+    font-family: helvetica;}
+
+h2 {
+    color: #699A6A;
+    font-size: 1.5em;
+    font-family: helvetica;}
+
+h3 {
+    color: #699A6A;
+    font-family:verdana, helvetica;
+  	font-weight:normal;
+  	font-style: italic;
+  	letter-spacing: .1em;
+    word-spacing: normal;
+    line-height: 1.25;}
+    
+/*special span of third_left h2*/
+.italic {font-weight:200;
+  	font-style: italic;
+  	letter-spacing: .05em;
+    word-spacing: normal;
+    line-height: 1.5;}  
+    
+.green {line-height: 1.5;}
+
+.blue {color: #4165B9;
+	line-height: 1.5;}
+
+.peach {color: #E9AA81;
+	line-height: 1.5;}
+
+/* About: Brief blurb & Contact: Greeting */
+.left_third {
+    float: left;
+    width: 28.42222213333333%;
+   	min-height: 460px;
+    
+    padding-left: 1.56250005%;
+    padding-right: 1.56250005%;
+    padding-top: 0;
+    border-style: solid;
+    border-width: 0.52083335%;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    
+  
+    margin-top: 0;
+    margin-left: 3%;
+    margin-right: 0;
+    margin-bottom: 0;
+
+   -moz-border-radius: 15px;
+    border-radius: 15px;}
+    
+/* About: Extended about section & Contact: Form section*/
+.right_twothird {
+    float: right;
+    width: 56.64444426666666%;
+   	min-height: 460px;
+    padding-left: 1.56250005%;
+    padding-right: 1.56250005%;
+    padding-top: 0;
+    border-style: solid;
+    border-width: 0.52083335%;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+
+    margin-top: 0;
+    margin-left: .6%;
+    margin-right: 3%;
+    margin-bottom: 0px;
+    
+    -moz-border-radius: 15px;
+    border-radius: 15px;}
+
+
+
+/* Tool: Section to paste text for analysis */
+.left_twothird {
+    float: left;
+    width: 56.64444426666666%;
+    min-height: 400px;
+    padding: 1.56250005%;
+    border-style: solid;
+    border-width: 0.52083335%;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    margin-top: 1.1%;
+    margin-left: 3%;
+    margin-right: 0;
+    margin-bottom: 0px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;}
+
+/* Tool: Section to display analysis */
+.right_third {
+    float: right;
+    width: 28.42222213333333%;
+    min-height: 400px;
+    padding: 1.56250005%;
+    border-style: solid;
+    border-width: 0.52083335%;
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+    margin-top: 1.1%;
+    margin-left:.6%;
+    margin-right: 3%;
+    margin-bottom: 0;
+    -moz-border-radius: 15px;
+    border-radius: 15px;}
+
+

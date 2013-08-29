@@ -1,44 +1,28 @@
-import cgi
+import webapp2
+import os
+import urllib
+import jinja2
 
-from google.appengine.api import users
-
-import webapp2
-
-
-MAIN_PAGE_HTML = """\
-<html>
-  <head>
-    <title>VAK Analyzer</title>
-  </head>
-  <body>
-    <p>Welcome to the VAK (Visual, Auditory, Kinesthetic) Text Analyzer. This is a resource to allow you to analyze a person's learning style in the VAK framework, without requiring them to undertake an evaluator test.</p>
-    <p>Enter a writing sample to discover the dominant learning style of the author.</p>
-    <form action="/analyze" method="post">
-      <div><textarea name="content" rows="3" cols="60"></textarea></div>
-      <div><input type="submit" value="Analyze writing sample:"></div>
-    </form>
-    <p>Tip: The larger the writing sample you can provide, the more accurate results will be.</p>
-  </body>
-</html>
-"""
-
-
-class MainPage(webapp2.RequestHandler):
-
-    def get(self):
-        self.response.write(MAIN_PAGE_HTML)
-
+JINJA_ENVIRONMENT = jinja2.Environment(
+    loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
+    extensions=['jinja2.ext.autoescape'])
 
 class Analyze(webapp2.RequestHandler):
 
+    def get(self):
+        template_values = {'analysis': "nothing"}     
+        template = JINJA_ENVIRONMENT.get_template('VAK_tool.html')
+        self.response.write(template.render(template_values))
+        
     def post(self):
-
-	text = cgi.escape(self.request.get('content'))
-	newtext = self.process(text)
-
-        self.response.write('<html><body>Analysis of entered text:<pre>')
-        self.response.write(newtext)
-        self.response.write('</pre></body></html>')
+        writing_sample = self.request.get('writing_sample')
+      
+        # Here we process the text
+        analysis = self.process(writing_sample)
+         
+        template_values = {'analysis': analysis}     
+        template = JINJA_ENVIRONMENT.get_template('VAK_tool.html')
+        self.response.write(template.render(template_values))
 
 
     def process(self, text):
@@ -122,19 +106,10 @@ class Analyze(webapp2.RequestHandler):
     
 
 	analysis = str(total) + " Keywords and/or indicator phrases found." + "<br><br><br>" + str(visual_counter) + " Visual indicators.<br>" + str(auditory_counter) + " Auditory indicators.<br>" + str(kinesthetic_counter) + " Kinesthetic indicators.<br><br><br>" + str(per_visual) + "%" + " Visual<br>" + str(per_auditory) + "%" + " Auditory<br>" + str(per_kinesthetic) + "%" + " Kinesthetic"
-
-
-    
-   
-
-
 	return analysis
 	
 
 
-
-
-application = webapp2.WSGIApplication([
-    ('/', MainPage),
-    ('/analyze', Analyze),
+app = webapp2.WSGIApplication([
+    ('/Analyze', Analyze),
 ], debug=True)
