@@ -1,14 +1,14 @@
 <!DOCTYPE html>
-{% autoescape true %}
+{% autoescape false %}
 <html>
     <head>
         <title>VAK Analyzer Tool</title>
-        <link rel="stylesheet" href="/css/VAK.css">
+        <link rel="stylesheet" href="common.css">
     </head>
 
     <body>
         <div class="logoANDtagline">
-            <img src="/images/logo.png" width="260" height="65" alt="VAKITY logo" />
+            <img src="logo.png" width="260" height="65" alt="VAKITY logo" />
             <h1>Analyzing Learning Styles From Afar</h1>
         </div>
 
@@ -21,9 +21,8 @@
         <div class="left_twothird">        
             <h2>Paste Text Below:</h2> 
             <p>
-                <form action="Analyze" method="post">
-                    <textarea name="writing_sample" rows="20" cols="50">
-                    </textarea>
+                <form action="analyze" method="post">
+                    <textarea name="writing_sample" rows="20" cols="50"></textarea>
                     <input type="submit" value="Analyze" />
                 </form>
                 
