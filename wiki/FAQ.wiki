@@ -1,0 +1,4 @@
+#summary Frequently Asked Questions
+
+*Q: What does VAK stand for?*
+A: *V*isual - *A*ditory - *K*inestetic
