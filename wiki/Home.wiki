@@ -1,0 +1,7 @@
+#summary Vakity project wiki
+
+= Introduction =
+
+Documentation for Vakity webservice
+
+#sidebar TableOfContents
