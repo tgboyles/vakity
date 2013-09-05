@@ -8,49 +8,39 @@ Testing plan for ongoing changes.
   # go to About page: check Learning Styles links to http://en.wikipedia.org/wiki/Learning_styles
   
 ==  Content ==
-  #Spellcheck content text
-  *Menus
-  *Buttons
-  *Copy
+  # Spellcheck content text
+  * Menus
+  * Buttons
+  * Copy
 
-== Tool  ==
-  # Navigate to Tool page
-  # Check the layout of boxes are aligned neatly
+== Layout  ==
+Check the layout of boxes are aligned neatly
+  # Navigate to *Tool* page
+  * Logo & tagline (Centered)
+  * Large left side (aligns with Logo box on the left)
+  * Small right side (aligns with Logo box on the right)
+  * Left & Right sides align along the top and bottom
+  * Footer (across entire width of page, sticky to the bottom)
+
+  # Navigate to *About* Page
   * Logo & tagline (Centered)
   * Small left side (aligns with Logo box on the left)
   * Large right side (aligns with Logo box on the right)
-  * Footer (across entire width of page)
-  # Spell check the text
+  * Left & Right sides align along the top and bottom
+  * Footer (across entire width of page, sticky to the bottom)
 
+  # Navigate to *Contact* Page
+  * Logo & tagline (Centered)
+  * Instructions (Centered)
+  * Small left side (aligns with Logo box on the left)
+  * Large right side (aligns with Logo box on the right)
+  * Left & Right sides align along the top and bottom
+  * Footer (across entire width of page, sticky to the bottom)
 
-
-
-== About Page ==
-*Boxes:*
-  # Logo & tagline
-  # Small left side: (short about blurb)
-  # Large right side: (longer about text)
-  # Footer: 
 
 *Functionality*
 
 *Links*
-  
-
-== Contact Page ==
-*Boxes:*
-  # Logo & tagline
-  # Instructions
-  # Large left side: (space to place text & submission button)
-  # Small right side: (area for displaying analysis)
-  # Footer: 
-
-*Functionality*
-
-*Links*
-
-
-
 
 
 
