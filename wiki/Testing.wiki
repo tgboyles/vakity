@@ -10,7 +10,7 @@ Testing plan for ongoing changes.
   # Large right side: (contact form & submission)
   # Footer: 
 *Functionality*
-
+  # 
 *Links*
 
 == About Page ==
@@ -36,8 +36,6 @@ Testing plan for ongoing changes.
 *Functionality*
 
 *Links*
-
-
 
 
 
