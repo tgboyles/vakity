@@ -1,13 +1,28 @@
 
+= Regression Testing =
 
-= Introduction =
-
-Add your content here.
+Testing plan for ongoing changes.
 
 
-= Details =
+== Tool Page ==
+ *Boxes:*
+  # Logo & tagline
+  # Small left side: (text welcoming feedback)
+  # Large right side: (contact form & submission)
+  # Footer: 
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+
+== About Page ==
+*Boxes:*
+  # Logo & tagline
+  # Small left side: (short about blurb)
+  # Large right side: (longer about text)
+  # Footer: 
+
+== Contact Page ==
+*Boxes:*
+  # Logo & tagline
+  # Instructions
+  # Large left side: (space to place text & submission button)
+  # Small right side: (area for displaying analysis)
+  # Footer: 
