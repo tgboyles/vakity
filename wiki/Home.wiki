@@ -3,3 +3,6 @@
 = Introduction =
 
 Documentation for Vakity webservice
+
+[FAQ]
+[Testing]
