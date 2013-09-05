@@ -1,11 +1,10 @@
-
 = Regression Testing =
 
 Testing plan for ongoing changes.
 
 
 == Tool Page ==
- *Boxes:*
+*Boxes:*
   # Logo & tagline
   # Small left side: (text welcoming feedback)
   # Large right side: (contact form & submission)
