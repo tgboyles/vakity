@@ -1,5 +1,5 @@
 #summary Vakity project wiki
-#sidebar Home
+#sidebar TOC
 = Introduction =
 
 Documentation for Vakity webservice
