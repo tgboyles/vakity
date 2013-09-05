@@ -3,5 +3,3 @@
 = Introduction =
 
 Documentation for Vakity webservice
-
-#sidebar TableOfContents
