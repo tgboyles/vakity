@@ -9,7 +9,9 @@ Testing plan for ongoing changes.
   # Small left side: (text welcoming feedback)
   # Large right side: (contact form & submission)
   # Footer: 
+*Functionality*
 
+*Links*
 
 == About Page ==
 *Boxes:*
@@ -18,6 +20,10 @@ Testing plan for ongoing changes.
   # Large right side: (longer about text)
   # Footer: 
 
+*Functionality*
+
+*Links*
+
 == Contact Page ==
 *Boxes:*
   # Logo & tagline
@@ -25,3 +31,26 @@ Testing plan for ongoing changes.
   # Large left side: (space to place text & submission button)
   # Small right side: (area for displaying analysis)
   # Footer: 
+
+*Functionality*
+
+*Links*
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
