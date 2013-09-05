@@ -3,14 +3,15 @@
 Testing plan for ongoing changes.
 
 
-== Tool Page ==
-*Boxes:*
-  # Logo & tagline
-  # Small left side: (text welcoming feedback)
-  # Large right side: (contact form & submission)
-  # Footer: 
+== Tool  ==
+  #*Navigate to Tool page*
+  #*Check each element:*
+  *Logo & tagline
+  * Small left side: (text welcoming feedback)
+  * Large right side: (contact form & submission)
+  * Footer: 
 *Functionality*
-  # 
+  *
 *Links*
 
 == About Page ==
@@ -36,8 +37,6 @@ Testing plan for ongoing changes.
 *Functionality*
 
 *Links*
-
-
 
 
 
