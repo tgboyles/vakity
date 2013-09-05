@@ -2,17 +2,28 @@
 
 Testing plan for ongoing changes.
 
+== Navigation / Links ==
+  # Enter www.vakity.com (if live testing), or http://localhost:9080/about (local)
+  # Check navigation menu links work: Tool, About, Contact 
+  # go to About page: check Learning Styles links to http://en.wikipedia.org/wiki/Learning_styles
+  
+==  Content ==
+  #Spellcheck content text
+  *Menus
+  *Buttons
+  *Copy
 
 == Tool  ==
-  #*Navigate to Tool page*
-  #*Check each element:*
-  *Logo & tagline
-  * Small left side: (text welcoming feedback)
-  * Large right side: (contact form & submission)
-  * Footer: 
-*Functionality*
-  *
-*Links*
+  # Navigate to Tool page
+  # Check the layout of boxes are aligned neatly
+  * Logo & tagline (Centered)
+  * Small left side (aligns with Logo box on the left)
+  * Large right side (aligns with Logo box on the right)
+  * Footer (across entire width of page)
+  # Spell check the text
+
+
+
 
 == About Page ==
 *Boxes:*
@@ -24,7 +35,7 @@ Testing plan for ongoing changes.
 *Functionality*
 
 *Links*
-  *Learning Styles links to http://en.wikipedia.org/wiki/Learning_styles
+  
 
 == Contact Page ==
 *Boxes:*
@@ -37,9 +48,6 @@ Testing plan for ongoing changes.
 *Functionality*
 
 *Links*
-
-
-
 
 
 
