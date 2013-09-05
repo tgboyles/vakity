@@ -7,5 +7,3 @@
 [Testing]
 
 [REST API]
-
-[Acknowledgements]
