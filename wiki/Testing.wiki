@@ -23,6 +23,7 @@ Testing plan for ongoing changes.
 *Functionality*
 
 *Links*
+  *Learning Styles links to http://en.wikipedia.org/wiki/Learning_styles
 
 == Contact Page ==
 *Boxes:*
@@ -35,9 +36,6 @@ Testing plan for ongoing changes.
 *Functionality*
 
 *Links*
-
-
-
 
 
 
