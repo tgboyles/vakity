@@ -1,4 +1,5 @@
 #summary Regression Test Plan
+#sidebar TOC
 
 = Regression Testing =
 
