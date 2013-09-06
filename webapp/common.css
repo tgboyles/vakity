@@ -5,7 +5,42 @@
 /*	 logo_blue			#807FFF */
 /*	 logo_blue_green			#4165B9 */
 
-
+html, #container { 
+	height: 100%; 
+	font-color: #FFFFFF; 
+	margin: 0; 
+	padding: 0;
+	}
+	
+/* Footer */
+.footer {
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: 10%;
+ margin-top: 90%;
+ color: #FFFFFF;
+ font-size: 1em;
+ font-type: serif;
+ padding-top: 3%;
+ font-weight: 200;
+ padding-left: 1.56250005%;
+ text-align: center;
+ border-style: solid;
+ border-width: 0.52083335%;
+ border-color: #203162;
+ background-color: #203162;
+ margin-top: 3%;
+ margin-left:.0%;
+ margin-right: 0;
+ margin-bottom: 0;
+   }
+   
+body > #container { 
+	height: auto; 
+	min-height: 100%; 
+	margin: 0; 
+	padding: 0; }
 
 wrapper {
 	position:relative;	/* This fixes the IE7 overflow hidden bug */
@@ -15,6 +50,7 @@ wrapper {
 	overflow:hidden;		/* This chops off any overhanging divs */}
 
 body {
+    height: 100%; 
     margin:0;
 	padding:0;
 	width:100%;
@@ -83,7 +119,17 @@ h3 {
   	font-style: italic;
   	letter-spacing: .1em;
     word-spacing: normal;
-    line-height: 1.25;}
+    line-height: 1.25;
+    }
+    
+h4 {color: #699A6A;
+    font-family:verdana, helvetica;
+  	font-weight:normal;
+  	font-style: italic;
+  	letter-spacing: .1em;
+    word-spacing: normal;
+    line-height: 1.5;
+    text-align: right;}
     
 /*special span of third_left h2*/
 .italic {font-weight:200;
@@ -179,5 +225,30 @@ h3 {
     margin-bottom: 0;
     -moz-border-radius: 15px;
     border-radius: 15px;}
+
+/* Footer */
+.footer {
+ clear: both;
+ position: relative;
+ z-index: 10;
+ height: 3em;
+ margin-top: -3em;
+ color: #FFFFFF;
+ font-size: 1em;
+ font-type: serif;
+ padding-top: 3%;
+ font-weight: 200;
+ padding-left: 1.56250005%;
+ text-align: center;
+ border-style: solid;
+ border-width: 0.52083335%;
+ border-color: #203162;
+ background-color: #203162;
+ margin-top: 3%;
+ margin-left:.0%;
+ margin-right: 0;
+ margin-bottom: 0;
+   }
+
 
 

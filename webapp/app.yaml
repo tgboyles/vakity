@@ -1,10 +1,14 @@
-application: vaktextanalyzer
-version: 1
+application: vakity-text-analyzer
+version: 10
 runtime: python27
 api_version: 1
 threadsafe: true
 
 handlers:
+  
+- url: /
+  static_files: about.html
+  upload: about\.html    
   
 - url: /analyze\.html
   static_files: analyze.html
@@ -27,11 +31,15 @@ handlers:
   upload: logo\.png  
 
 
-- url: .*
+- url: /analyze
   script: Analyze.app
+
+- url: /path
+  script: Path.app
+
 
 libraries:
 - name: webapp2
   version: latest
 - name: jinja2
-  version: latest
+  version: 2.6

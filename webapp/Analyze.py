@@ -1,9 +1,9 @@
-import webapp2
 import os
 import urllib
 import jinja2
+import webapp2
 
-PROJECT_DIR = os.path.dirname(__file__)
+    
 JINJA_ENVIRONMENT = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
     extensions=['jinja2.ext.autoescape'])
@@ -11,24 +11,33 @@ JINJA_ENVIRONMENT = jinja2.Environment(
 class Analyze(webapp2.RequestHandler):
 
     def get(self):
-        template_values = {'analysis': "&nbsp;"}     
-        template = JINJA_ENVIRONMENT.get_template('./analyze.html')
-        self.response.write(template.render(template_values))
+        template_values = {
+            'analysis': "&nbsp;"
+        }
         
+        template = JINJA_ENVIRONMENT.get_template('analyze.html')
+        self.response.write(template.render(template_values))
+                
     def post(self):
         writing_sample = self.request.get('writing_sample')
       
         # Here we process the text
         analysis = self.process(writing_sample)
          
-        template_values = {'analysis': analysis}     
-        template = JINJA_ENVIRONMENT.get_template('./analyze.html')
+        template_values = {
+            'analysis': analysis
+        }
+         
+        template = JINJA_ENVIRONMENT.get_template('analyze.html')
         self.response.write(template.render(template_values))
 
 
     def process(self, text):
 	
-	
+	    #if len.writing_sample < 100:
+           #return "Your sample text is quite short. You may need a larger sample for accurate results." + analysis
+           
+           
     	visual_dictionary = ("see", 
                              "look", 
                              "appear", 
