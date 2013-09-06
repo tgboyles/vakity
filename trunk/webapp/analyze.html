@@ -1,39 +1,51 @@
 <!DOCTYPE html>
 {% autoescape false %}
 <html>
-    <head>
-        <title>VAK Analyzer Tool</title>
-        <link rel="stylesheet" href="common.css">
-    </head>
 
-    <body>
-        <div class="logoANDtagline">
-            <img src="logo.png" width="260" height="65" alt="VAKITY logo" />
-            <h1>Analyzing Learning Styles From Afar</h1>
-        </div>
+<head>
+    <title>VAK Analyzer Tool</title>
+    <link rel="stylesheet" href="common.css">
+</head>
 
-        <div class="instructions">
-            <h2>Instructions:</h2>
-            <p><em class="special_body">To analyze some text, enter a sample below. 
-            We recommend three paragraphs minimum for decent results.</em></p>
-        </div>
+<body>
+    <div id="container">
 
-        <div class="left_twothird">        
-            <h2>Paste Text Below:</h2> 
-            <p>
-                <form action="analyze" method="post">
-                    <textarea name="writing_sample" rows="20" cols="50"></textarea>
-                    <input type="submit" value="Analyze" />
-                </form>
+        <div id="content">
+            
+            <div class="logoANDtagline">
+                <img src="logo.png" width="260" height="65" alt="VAKITY logo" />
+                <h1>Analyzing Learning Styles From Afar</h1>
+            </div>
+
+            <div class="instructions">
+                <h2>Instructions:</h2>
+                <p><em class="special_body">To analyze some text, enter a sample below. 
+                We recommend three paragraphs minimum for decent results.</em></p>
+            </div>
+
+            <div class="left_twothird">        
+                <h2>Paste Text Below:</h2> 
+                <p>
+                    <form action="analyze" method="post">
+                        <textarea name="writing_sample" rows="20" cols="50"></textarea>
+                        <input type="submit" value="Analyze" />
+                    </form>
                 
-            </p>
-        </div>
+                </p>
+            </div>
 
-        <div class="right_third">
-            <h2>Analysis:</h2>
-            <p>{{ analysis }}</p>
+            <div class="right_third">
+                <h2>Analysis:</h2>
+                <p>{{ analysis }}</p>
+                <p>{{ basepath }}</p>
+            </div>
+       
         </div>
+    
+    </div>    
 
+<div class="footer">Copyright 2013 | <a href="analyze">Analyzer Tool</a> | <a href="about">About the Tool</a> | <a href="contact">Contact Us</a>
+</div>
     </body>
 </html>
 {% endautoescape %}
