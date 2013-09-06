@@ -1,12 +1,20 @@
+#summary Structure and Location
 
-= Introduction =
+== Location ==
 
-Add your content here.
+File: Analyze.py
+Function: process
 
 
-= Details =
+== Structure ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+Dictionaries consist of a set of three tuples, one for each of the V-A-K learning styles:
+  * visual_dictionary
+  * auditory_dictionary
+  * kinesthetic_dictionary
+
+Elements in the tuple may be a single word, or a phrase.
+
+== Next Steps ==
+
+Dictionaries may be abstracted to properties files at some point in the future.
