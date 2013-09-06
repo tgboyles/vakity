@@ -1,3 +1,5 @@
+#summary Regression Test Plan
+
 = Regression Testing =
 
 Testing plan for ongoing changes.
@@ -53,4 +55,3 @@ Check the layout of boxes are aligned neatly
   # Enter partial details (do not fill all boxes). Attempt to send.
   * Message should not be sent
   * User should get error handling
-
