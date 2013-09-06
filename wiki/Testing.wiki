@@ -38,12 +38,19 @@ Check the layout of boxes are aligned neatly
   * Footer (across entire width of page, sticky to the bottom)
 
 
-*Functionality*
+== Functionality ==
 
-*Links*
+  # Navigate to *Tool* page
+  # Enter "see hear feel". Analyze.
+  * Analysis should be one each VAK
+  * Percentages should be whole, no decimal, & add to 100
+  # Enter "yesterday I sat"
+  * Analysis should be zero each VAK
 
-
-
-
-
+  # Navigate to *Contact* Page
+  # Enter contact details and a message (fill all boxes). Hit button to send.
+  * Message should be received
+  # Enter partial details (do not fill all boxes). Attempt to send.
+  * Message should not be sent
+  * User should get error handling
 
