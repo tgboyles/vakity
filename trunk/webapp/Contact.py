@@ -16,7 +16,7 @@ class Contact(webapp2.RequestHandler):
             'foo': 'bar'
         }
          
-        template = JINJA_ENVIRONMENT.get_template('contact.html')
+        template = JINJA_ENVIRONMENT.get_template('/contact.html')
         self.response.write(template.render(template_values))   
       
     def post(self):
@@ -25,21 +25,17 @@ class Contact(webapp2.RequestHandler):
         email = self.request.get('email')
         comments = self.request.get('comments')
                  
-        send_mail(first_name, last_name, email, comments)
+        mail.send_mail(sender=email,
+            to="Margeaux Bucher <mxbucher@gmail.com>",
+            subject="Contact from Vakity Web App: " + first_name + " " + last_name,
+            body=comments)
         
         template_values = {
             'foo': 'bar'
         }
           
-        template = JINJA_ENVIRONMENT.get_template('contact.html')
+        template = JINJA_ENVIRONMENT.get_template('/contact.html')
         self.response.write(template.render(template_values))
-
-    def send_mail(self, first_name, last_name, email, comments):
-        mail.send_mail(sender=email,
-            to="Margeaux Bucher <mxbucher@gmail.com>",
-            subject="Contact from Vakity Web App: " + first_name + " " + last_name,
-            body=comments)
-  
 
 app = webapp2.WSGIApplication([
     ('/contact', Contact),
