@@ -2,7 +2,9 @@ import os
 import urllib
 import jinja2
 import webapp2
-
+from DictionaryVisual import *
+from DictionaryAuditory import *
+from DictionaryKinesthetic import *
     
 JINJA_ENVIRONMENT = jinja2.Environment(
     loader=jinja2.FileSystemLoader(os.path.dirname(__file__)),
@@ -34,64 +36,10 @@ class Analyze(webapp2.RequestHandler):
 
     def process(self, text):
 	
-	    #if len.writing_sample < 100:
-           #return "Your sample text is quite short. You may need a larger sample for accurate results." + analysis
-           
-           
-    	visual_dictionary = ("see", 
-                             "look", 
-                             "appear", 
-                             "foggy", 
-                             "see eye to eye", 
-                             "in light of", 
-                             "get a mental picture", 
-                             "you can plainly see", 
-                             "clear cut", "appears", 
-                             "make a scene", 
-                             "my perspective", 
-                             "under your nose", 
-                             "test_test")
-    
-    	auditory_dictionary = ("hear", 
-                               "listen", 
-                               "sounds", 
-                               "deaf", 
-                               "describe", 
-                               "as a manner of speaking", 
-                               "just idle talk", 
-                               "that rings a bell", 
-                               "clear as a bell", 
-                               "earful", 
-                               "tounge-tied", 
-                               "tounge tied", 
-                               "pay more attention to", 
-                               "hold your tounge", 
-                               "heard voices", 
-                               "hearing voices", 
-                               "within hearing range" )
-        
-       	
-    	kinesthetic_dictionary = ("feel", 
-                                  "touch", 
-                                  "get ahold of", 
-                                  "hard", 
-                                  "get a load of this", 
-                                  "sharp as a tack", 
-                                  "feeling", 
-                                  "hot headed", 
-                                  "hot-headed", 
-                                  "pain in the neck", 
-                                  "pain in the butt", 
-                                  "pain in the ass", 
-                                  "pain in the arse", 
-                                  "boils down to", 
-                                  "get a grip on", 
-                                  "starting from scratch", 
-                                  "keep your shirt on", 
-                                  "panties in a twist", 
-                                  "get in touch with", 
-                                  "make a leap",
-                                  "slipped my mind" )
+        visual_dictionary = DictionaryVisual().get()     
+        auditory_dictionary = DictionaryAuditory().get()
+    	kinesthetic_dictionary = DictionaryKinesthetic().get()
+
     	visual_counter = 0
     	for word in visual_dictionary:
             	visual_counter = visual_counter + text.count(word) 

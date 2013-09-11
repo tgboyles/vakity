@@ -14,6 +14,10 @@ handlers:
   static_files: about.html
   upload: about\.html    
 
+- url: /rest
+  static_files: rest.html
+  upload: rest\.html    
+
 - url: /common\.css
   static_files: common.css
   upload: common\.css  
@@ -30,6 +34,19 @@ handlers:
 
 - url: /contact
   script: Contact.app
+
+- url: /rest/dictionary/visual
+  script: RestDictionaryVisual.app
+
+- url: /rest/dictionary/auditory
+  script: RestDictionaryAuditory.app
+
+- url: /rest/dictionary/kinesthetic
+  script: RestDictionaryKinesthetic.app
+
+- url: /rest/analyze
+  script: RestAnalyze.app
+
 
 libraries:
 - name: webapp2
