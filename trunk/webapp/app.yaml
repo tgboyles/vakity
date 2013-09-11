@@ -1,5 +1,5 @@
 application: vakity-text-analyzer
-version: 11
+version: 12
 runtime: python27
 api_version: 1
 threadsafe: true
@@ -9,18 +9,10 @@ handlers:
 - url: /
   static_files: about.html
   upload: about\.html    
-  
-- url: /analyze\.html
-  static_files: analyze.html
-  upload: analyze\.html    
 
 - url: /about
   static_files: about.html
   upload: about\.html    
-
-- url: /contact
-  static_files: contact.html
-  upload: contact\.html    
 
 - url: /common\.css
   static_files: common.css
@@ -29,7 +21,6 @@ handlers:
 - url: /logo\.png
   static_files: logo.png
   upload: logo\.png  
-
 
 - url: /analyze
   script: Analyze.app

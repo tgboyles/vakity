@@ -15,7 +15,7 @@ class Analyze(webapp2.RequestHandler):
             'analysis': "&nbsp;"
         }
         
-        template = JINJA_ENVIRONMENT.get_template('analyze.html')
+        template = JINJA_ENVIRONMENT.get_template('/analyze.html')
         self.response.write(template.render(template_values))
                 
     def post(self):
@@ -28,7 +28,7 @@ class Analyze(webapp2.RequestHandler):
             'analysis': analysis
         }
          
-        template = JINJA_ENVIRONMENT.get_template('analyze.html')
+        template = JINJA_ENVIRONMENT.get_template('/analyze.html')
         self.response.write(template.render(template_values))
 
 
