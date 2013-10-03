@@ -6,6 +6,18 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 
 = Details =
 
-   * From your local workstation Open the GoogleAppEngineLauncher
+   * From your local workstation, open the GoogleAppEngineLauncher
 
    * Select the 'vakity-test-analyzer' project from the project list and click the 'Run' button
+
+   * Test the site using the [Testing] plan
+
+   * If all tests pass, ensure that all changes have been committed to the SCM using the [HowToCommitChangesToSCM] HowTo
+
+   * Once you've verified that the changes have been committed, return to the GoogleAppEngineLauncher and click the 'Deploy' button
+
+   * You will be presented with a sign-in dialog. Log in with your Google credentials
+
+   * The 'Log Console' dialog will appear. Monitor the log output as it uploads the web-app, paying special attention to any errors or warnings that might appear. Report these immediately to our DevOps people. If you don't see any errors, the deployment is successful.
+
+   * From the GoogleAppEngineLauncher, click the 'Dashboard' button
