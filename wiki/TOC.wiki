@@ -1,5 +1,7 @@
 #summary Table of Contents
 
+[Home]
+
 [FAQ]
 
 [Usage]
