@@ -86,25 +86,6 @@ h4 {
   	letter-spacing: .1em;
     word-spacing: normal;
     line-height: 1.25;}
-    
-ul li { 
-    /* where is the color blue being inherited from? I can't seem to change it*/
-    display: inline;
-    padding: 0 1em 0 0;
-    list-style-type: none;
-    font-family:verdana, helvetica;
-  	font-weight:heavy;
-  	letter-spacing: .1em;
-    word-spacing: normal;}
-  
-a: {
-	text-decoration: none
-}
-a:link {}
-a:visited {}
-a:focus {}
-a:hover {}
-a:active {}
 
 h6 {
 	color: #699A6A;
@@ -116,6 +97,32 @@ h6 {
     line-height: 1.5;
     text-align: left;
     padding-top: 0px;}
+   
+
+    
+ul li { 
+    display: inline;
+    padding: 0 1em 0 0;
+    list-style-type: none;
+    font-family:verdana, helvetica;
+  	font-weight:heavy;
+  	font-size: 1.25em;
+  	letter-spacing: .1em;
+    word-spacing: normal;
+    }
+    
+    
+li a { 
+	color: #FFF;
+	text-decoration: none;
+    /*display: inline;*/
+    padding: 0 1em 0 1.25em;
+    }
+
+li a:hover {
+	padding: 0 1em 0 1.25em;
+    color: #EBAB7D;}
+
     
 /*special span of third_left h2*/
 .italic {font-weight:200;
