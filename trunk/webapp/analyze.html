@@ -8,34 +8,39 @@
 </head>
 
 <body>
-    <div id="container">
+    <div class="container">
 
-        <div id="content">
+        <div class="content">
             
             <div class="logoANDtagline">
-                <img src="logo.png" width="260" height="65" alt="VAKITY logo" />
+                <a href="analyze">
+                    <img src="logo.png" width="260" height="65" alt="VAKITY logo" />
+                </a>
                 <h1>Analyzing Learning Styles From Afar</h1>
             </div>
-
-            <div class="instructions">
-                <h2>Instructions:</h2>
-                <p><em class="special_body">To analyze some text, enter a sample below. 
-                We recommend three paragraphs minimum for decent results.</em></p>
-            </div>
+            
+                <ul>
+                    <li><a href="analyze">Analyzer Tool</a></li>
+                    <li><a href="about">About the Tool</a></li>
+                    <li><a href="contact">Contact Us</a></li>
+                </ul>
 
             <div class="left_twothird">        
-                <h2>Paste Text Below:</h2> 
+                <h3>To Analyze Text:</h3>
+                <h6>Paste a writing sample below. We recommend three paragraphs minimum of personal writing, meaning they are writing as themselves, 
+                as from an email or letter.</h6>
                 <p>
                     <form action="analyze" method="post">
-                        <textarea name="writing_sample" rows="20" cols="50"></textarea>
-                        <input type="submit" value="Analyze" />
-                    </form>
-                
+                        <textarea name="writing_sample" rows="20" cols="55" style="width: 90%; align: center"></textarea><br>
+                </p>        
+                <p align="right">
+                    <input type="submit" value="Analyze" />
+                    </form
                 </p>
             </div>
 
             <div class="right_third">
-                <h2>Analysis:</h2>
+                <h3>Analysis Results:</h3>
                 <p>{{ analysis }}</p>
                 <p>{{ basepath }}</p>
             </div>
@@ -44,7 +49,7 @@
     
     </div>    
 
-<div class="footer">Copyright 2013 | <a href="analyze">Analyzer Tool</a> | <a href="about">About the Tool</a> | <a href="contact">Contact Us</a>
+<div class="footer"><p>&copy; Copyright 2013</p>
 </div>
     </body>
 </html>
