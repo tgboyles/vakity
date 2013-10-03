@@ -7,3 +7,5 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 = Details =
 
    * From your local workstation Open the GoogleAppEngineLauncher
+
+   * Select the 'vakity-test-analyzer' project from the project list and click the 'Run' button
