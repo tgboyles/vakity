@@ -1,7 +1,7 @@
 #summary This HowTo describes the how to deploy the webapp to Google Code
 = Introduction =
 
-This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you already have the project set up in the GoogleAppEngineLauncher and have the correct credentials for the App Engine console.
+This How-to describes how to deploy the webapp to Google Code. It assumes that you already have the project set up in the Google App Engine Launcher and have the correct credentials for the App Engine console.
 
 
 = Details =
@@ -14,7 +14,7 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 
    * Save the file.
 
-   * From your local workstation, open the GoogleAppEngineLauncher
+   * From your local workstation, open the Google App Engine Launcher
 
    * Select the 'vakity-test-analyzer' project from the project list and click the 'Run' button
 
@@ -28,9 +28,9 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 
    * You will be presented with a sign-in dialog. Log in with your Google credentials
 
-   * The 'Log Console' dialog will appear. Monitor the log output as it uploads the web-app, paying special attention to any errors or warnings that might appear. Report these immediately to our DevOps people. If you don't see any errors, the deployment is successful.
+   * The 'Log Console' dialog will appear. Monitor the log output as it uploads the web-app, paying special attention to any errors or warnings that might appear. Report these immediately to our Dev Ops people. If you don't see any errors, the deployment is successful.
 
-   * From the GoogleAppEngineLauncher, click the 'Dashboard' button or navigate to [https://appengine.google.com/dashboard?app_id=vakity-text-analyzer] from a web browser
+   * From the Google App Engine Launcher, click the 'Dashboard' button or navigate to [https://appengine.google.com/dashboard?app_id=vakity-text-analyzer] from a web browser
 
    * From the side navigation bar, under 'Main', select 'Versions'
 
@@ -38,4 +38,4 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 
    * Test the site using the [Testing] plan. 
 
-   * 
+   * Once all tests have passed, return to the 'Versions' click the select button next to the newly deployed version and click the 'Make Default' button. This will effectively make the new release live and it will be visible to the public.
