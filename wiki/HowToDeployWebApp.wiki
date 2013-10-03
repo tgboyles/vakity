@@ -25,7 +25,7 @@ This How-to describes how to deploy the webapp to Google Code. It assumes that y
 
    * If all tests pass, ensure that all changes have been committed to the SCM using the [HowToCommitChangesToSCM] HowTo
 
-   * Once you've verified that the changes have been committed, return to the GoogleAppEngineLauncher and click the 'Deploy' button
+   * Once you've verified that the changes have been committed, return to the Google App Engine Launcher and click the 'Deploy' button
 
    * You will be presented with a sign-in dialog. Log in with your Google credentials
 
