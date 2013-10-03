@@ -6,9 +6,19 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 
 = Details =
 
+   * From your local workstation, open your IDE
+
+   * From the PyDev package explorer, open /vakity.trunk/webapp/app.yaml
+
+   * Increment the 'version:' value. For example, if the current value is 'version: 14', make it 'version: 15'. If these don't get incremented, you'll end up overwriting an existing deploy.
+
+   * Save the file.
+
    * From your local workstation, open the GoogleAppEngineLauncher
 
    * Select the 'vakity-test-analyzer' project from the project list and click the 'Run' button
+
+   * Click the 'Browse' button. The local version of the app will open in a web browser
 
    * Test the site using the [Testing] plan
 
@@ -20,4 +30,12 @@ This HowTo describes how to deploy the webapp to GoogleCode. It assumes that you
 
    * The 'Log Console' dialog will appear. Monitor the log output as it uploads the web-app, paying special attention to any errors or warnings that might appear. Report these immediately to our DevOps people. If you don't see any errors, the deployment is successful.
 
-   * From the GoogleAppEngineLauncher, click the 'Dashboard' button
+   * From the GoogleAppEngineLauncher, click the 'Dashboard' button or navigate to [https://appengine.google.com/dashboard?app_id=vakity-text-analyzer] from a web browser
+
+   * From the side navigation bar, under 'Main', select 'Versions'
+
+   * Click on the number link for the latest version. It will open the site in a new tab or window.
+
+   * Test the site using the [Testing] plan. 
+
+   * 
