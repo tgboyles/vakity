@@ -1,4 +1,5 @@
 #summary This how-to describes how to commit code changes to the SCM.
+#sidebar TOC
 
 = Introduction =
 
