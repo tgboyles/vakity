@@ -1,4 +1,4 @@
-#summary This HowTo describes the how to deploy the webapp to Google Code
+#summary This how-to describes the how to deploy the webapp to Google Code
 = Introduction =
 
 This How-to describes how to deploy the webapp to Google Code. It assumes that you already have the project set up in the Google App Engine Launcher and have the correct credentials for the App Engine console.
