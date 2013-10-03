@@ -1,13 +1,13 @@
-#summary This How-to describes how to commit code changes to the SCM.
+#summary This how-to describes how to commit code changes to the SCM.
 
 = Introduction =
 
-This How-to describes how to commit code changes to the SCM.
+This how-to describes how to commit code changes to the SCM.
 
 
 = Details =
 
-   * From your local workstation, open the GoogleAppEngineLauncher
+   * From your local workstation, open the Google App Engine Launcher
 
    * Select the 'vakity-test-analyzer' project from the project list and click the 'Run' button
 
