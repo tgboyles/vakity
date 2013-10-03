@@ -10,4 +10,8 @@
 
 [REST API]
 
-[HowTos]
+How-Tos
+    
+    [HowToCommitChangesToSCM]
+
+    [HowToDeployWebApp]
