@@ -16,14 +16,16 @@ body > .container {
 	height: auto; 
 	min-height: 100%; 
 	margin: 0; 
-	padding: 0; }
+	padding: 0;
+    }
 
 wrapper {
 	position:relative;	/* This fixes the IE7 overflow hidden bug */
 	clear:both;
 	float:left;
 	width:100%;			/* width of whole page */
-	overflow:hidden;		/* This chops off any overhanging divs */}
+	overflow:hidden;		/* This chops off any overhanging divs */
+	}
 
 
 
@@ -38,7 +40,8 @@ body {
 	font-size:90%;
     font-family: helvetica;
     color: #4F734F;
-    background-color: #4062C3;}
+    background-color: #4062C3;
+    }
 
 .logoANDtagline {
     padding-left: 1.0416667%;
@@ -51,8 +54,8 @@ body {
     margin-left: 3%;
     margin-right: 3%;
     margin-bottom: 0/*1.1%*/;
-	 -moz-border-radius: 15px;
-    border-radius: 15px;}
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
     
 h1 {
     color: #EBAB7D;
@@ -73,8 +76,7 @@ h2 {
     font-size: 100%;
     font-family: helvetica;}
 
-h3 {
-    color: #699A6A;
+h3 {color: #699A6A;
     font-size: 175%;
     font-family: helvetica;}
 
@@ -97,7 +99,6 @@ h6 {
     line-height: 1.5;
     text-align: left;
     padding-top: 0px;}
-   
 
     
 ul li { 
@@ -110,8 +111,7 @@ ul li {
   	letter-spacing: .1em;
     word-spacing: normal;
     }
-    
-    
+
 li a { 
 	color: #FFF;
 	text-decoration: none;
@@ -123,7 +123,6 @@ li a:hover {
 	padding: 0 1em 0 1.25em;
     color: #EBAB7D;}
 
-    
 /*special span of third_left h2*/
 .italic {font-weight:200;
   	font-style: italic;
@@ -144,7 +143,6 @@ li a:hover {
     float: left;
     width: 28.42222213333333%;
    	min-height: 460px;
-    
     padding-left: 1.56250005%;
     padding-right: 1.56250005%;
     padding-top: 0;
@@ -152,15 +150,12 @@ li a:hover {
     border-width: 0.52083335%;
     border-color: #FFFFFF;
     background-color: #FFFFFF;
-    
-  
     margin-top: 0;
     margin-left: 3%;
     margin-right: 0;
     margin-bottom: 0;
-
-   -moz-border-radius: 15px;
-    border-radius: 15px;}
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
     
 /* About: Extended about section & Contact: Form section*/
 .right_twothird {
@@ -174,23 +169,20 @@ li a:hover {
     border-width: 0.52083335%;
     border-color: #FFFFFF;
     background-color: #FFFFFF;
-
     margin-top: 0;
     margin-left: .6%;
     margin-right: 3%;
     margin-bottom: 0px;
-    
-    -moz-border-radius: 15px;
-    border-radius: 15px;}
-
-
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
 
 /* Tool: Section to paste text for analysis */
 .left_twothird {
     float: left;
     width: 56.64444426666666%;
-    min-height: 420px;
+    min-height: 460px;
     padding: 1.56250005%;
+    padding-top: 0;
     padding-bottom: 0;
     border-style: solid;
     border-width: 0.52083335%;
@@ -200,15 +192,17 @@ li a:hover {
     margin-left: 3%;
     margin-right: 0;
     margin-bottom: 0px;
-    -moz-border-radius: 15px;
-    border-radius: 15px;}
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
 
 /* Tool: Section to display analysis */
 .right_third {
     float: right;
     width: 28.42222213333333%;
-    min-height: 420px;
+    min-height: 460px;
     padding: 1.56250005%;
+    padding-top: 0;
+    padding-bottom: 0;
     border-style: solid;
     border-width: 0.52083335%;
     border-color: #FFFFFF;
@@ -217,8 +211,8 @@ li a:hover {
     margin-left:.6%;
     margin-right: 3%;
     margin-bottom: 0;
-    -moz-border-radius: 15px;
-    border-radius: 15px;}
+    -moz-border-radius: 7px;
+    border-radius: 7px;}
 
 /* Footer */
 .footer {
@@ -242,34 +236,9 @@ li a:hover {
  margin-right: 0;
  margin-bottom: 0;
    }
-
-
-
-/* Footer */
-.footer {
- clear: both;
- position: relative;
- z-index: 10;
- height: 10%;
- margin-top: 90%;
- color: #FFFFFF;
- font-size: .75em;
- font-type: serif;
- padding-top: 3%;
- padding-left: 3%;
- text-align: left;
- border-style: solid;
- border-width: 0.52083335%;
- border-color: #203162;
- background-color: #203162;
- margin-top: 3%;
- margin-left: 0;
- margin-right: 0;
- margin-bottom: 0;
-   }
    
    
-   /*Tool: menu (to be replaced with an unordered, horizonal list)
+   /*Tool: menu (to be replaced with an unordered, horizontal list)
 .menu {
     color: #FFFFFF;
     rollover-color: #E9AA81;
@@ -282,5 +251,4 @@ li a:hover {
     margin-right: 3%;
     margin-top: 0;
     margin-bottom: 0;
-    -moz-border-radius: 15px;
-    border-radius: 15px;}  */
+    }  */
