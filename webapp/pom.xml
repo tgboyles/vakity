@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>net.semiprescient.vakity.webapp</groupId>
+    <artifactId>vakity-text-analyzer</artifactId>
+    <version>30</version>
+    <packaging>jar</packaging>
+    <name>vakity-text-analyzer</name>
+
+
+    <build>
+        <finalName>${project.artifactId}.${project.version}</finalName>
+
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-antrun-plugin</artifactId>
+                    <version>1.7</version>
+                    <dependencies>
+                        <dependency>
+                            <groupId>ant-contrib</groupId>
+                            <artifactId>ant-contrib</artifactId>
+                            <version>1.0b3</version>
+                            <exclusions>
+                                <exclusion>
+                                  <groupId>ant</groupId>
+                                  <artifactId>ant</artifactId>
+                                </exclusion>
+                            </exclusions>
+                         </dependency>
+                         <dependency>
+                            <groupId>org.apache.ant</groupId>
+                            <artifactId>ant-nodeps</artifactId>
+                            <version>1.8.1</version>
+                        </dependency>
+                        <dependency>
+                            <groupId>org.tigris.antelope</groupId>
+                            <artifactId>antelopetasks</artifactId>
+                            <version>3.2.10</version>
+                        </dependency>
+                            <dependency>
+                            <groupId>org.apache.ant</groupId>
+                            <artifactId>ant-jsch</artifactId>
+                            <version>1.7.1</version>
+                        </dependency>
+                    </dependencies>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+        <plugins>
+	        <plugin>
+	            <groupId>org.apache.maven.plugins</groupId>
+	            <artifactId>maven-antrun-plugin</artifactId>
+	            <executions>
+
+                    <execution>
+                        <id>update-app.yaml</id>
+                        <phase>process-sources</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <replaceregexp file="${project.basedir}/src/main/resources/app.yaml"
+                                    match="(^)version: (.*)"
+                                    replace="version: ${project.version}"
+                                    byline="true" />
+                            </tasks>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+	                    <id>compile</id>
+	                    <phase>compile</phase>
+	                    <goals>
+	                        <goal>run</goal>
+	                    </goals>
+	                    <configuration>
+	                        <tasks>
+                                <apply executable="/usr/local/bin/pylint" parallel="false">
+                                    <srcfile/>               
+                                    <fileset dir="${project.basedir}/src/main/resources" includes="*.py"/>
+                                </apply>
+	                        </tasks>
+	                    </configuration>
+	                </execution>
+
+                    <execution>
+                        <id>test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>run</goal>
+                        </goals>
+                        <configuration>
+                            <tasks>
+                                <apply executable="/usr/local/bin/pylint" parallel="false">
+                                    <srcfile/>               
+                                    <fileset dir="${project.basedir}/src/main/resources" includes="*.py"/>
+                                </apply>
+                            </tasks>
+                        </configuration>
+                    </execution>
+	                
+	                
+                </executions>
+	        </plugin>
+
+        </plugins>
+    </build>
+</project>
