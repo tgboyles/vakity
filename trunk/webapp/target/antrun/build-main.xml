@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project name="maven-antrun-" default="main"  >
+<target name="main">
+  <apply parallel="false" executable="/usr/local/bin/pylint">
+    <srcfile/>
+    <fileset dir="/Users/tboyles/workspace-sp/vakity.trunk/webapp/src/main/resources" includes="*.py"/>
+  </apply>
+</target>
+</project>
