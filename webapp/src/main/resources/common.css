@@ -140,6 +140,64 @@ li a:hover {
 .peach {color: #E9AA81;
 	line-height: 1.5;}
 
+
+form fieldset
+    {border: 0px;
+    width: 93.8749999%;
+    float: left;
+    margin: 0px ;
+    padding: 0px;
+    display: block;}
+    
+form fieldset ol
+    {float: left;
+    border: 0px;
+    margin: 0px ;
+    padding: 0px;}
+    
+form fieldset li
+    {list-style: none;
+    list-align: left;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;}
+    
+li.comments
+    {list-style: none;
+    list-align: center;
+    width: 100%;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;}
+    
+input
+    {width:100%;
+    border: 1px solid #999;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);}
+    
+input[name=first_name], input[name=last_name]
+    {width:33%;
+    border: 1px solid #999;}
+    
+input[name=email]
+    {width:66%;
+    border: 1px solid #999;}
+    
+textarea[name=comments]
+    {width:100%;
+    border: 1px solid #999;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);}
+    
+input[name=submit]
+    {width:15em;}
+    
+    
+    
+    
 /* About: Brief blurb & Contact: Greeting */
 .left_third {
     float: left;

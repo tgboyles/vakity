@@ -41,15 +41,43 @@
         <div class="right_twothird">
             <h3>Contact Us:</h3>
             <form action="/contact" method="post">
-
-                <p>Name:   <input type="text" name="first_name" value="First" cols="24" style="width: 24%; align: left">
+                
+                <fieldset>
+                    <ol>
+                    <li>
+                        <label for="name">Name:<em>*</em></label>
+                        <input type="text" name="first_name" value="First" id="first_name">
+                        <input type="text" name="last_name" value="Last" id="last_name"></li>
+                        <br>
+                    <li>
+                        <label for="email">Email:<em>*</em></label>
+                        <input type="text" name="email" value="Email" id="email"></li>
+                        <br>
+                        <br>
+                    <li>
+                        <label for="message">Message:</label><br>
+                        <textarea name="comments" id="comments" rows="11" cols="70" style="width: 99%; align: center;">Your comments</textarea></p>
+                        </li>
+                        <br>
+                    <li>
+                        <input type="submit" id="submit" background-color="#83C084"></li>
+                    </ol>
+                </fieldset>
+                
+                <!--
+                <p>Name:  <input type="text" value="First"></p><p><input type="text" id="last_name" value="Last"></p>
+                <p>Email: <input type="text" value="Email"></p>
+                <p>Comments: <textarea name="comments">Your comments</textarea></p>
+                <p align="left"><input type="submit" background-color="#83C084"></p>
+                -->
+                
+                <!--
+                <p><label for="name">Name:</label><input type="text" name="first_name" value="First" cols="24" style="width: 24%; align: left">
                 <input type="text" name="last_name" value="Last" cols="24" style="width: 24%; align: left"></p>
-
-                <p><br />Email: <input type="text" name="email" value="Email" cols="50" style="width: 50%; align: left"></p>
-
-                <p><br />Comments: <textarea name="comments" rows="10" cols="60" style="width: 99%; align: center;">Your comments</textarea></p>
-
+                <p><br /><label for="email">Email: <input type="text" name="email" value="Email" cols="50" style="width: 50%; align: left"></p>
+                <p><br /><label for="comments">Comments: <textarea name="comments" rows="10" cols="60" style="width: 99%; align: center;">Your comments</textarea></p>
                 <p align="right"><input type="submit" background-color="#83C084"></p>
+                -->
 
             </form>
         </div>	
