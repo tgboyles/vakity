@@ -1,0 +1,18 @@
+## Location ##
+
+File: Analyze.py
+Function: process
+
+
+## Structure ##
+
+Dictionaries consist of a set of three tuples, one for each of the V-A-K learning styles:
+  * visual\_dictionary
+  * auditory\_dictionary
+  * kinesthetic\_dictionary
+
+Elements in the tuple may be a single word, or a phrase.
+
+## Next Steps ##
+
+Dictionaries may be abstracted to properties files at some point in the future.

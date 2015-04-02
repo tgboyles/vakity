@@ -1,0 +1,8 @@
+**Q: What does VAK stand for?**
+
+A: **V** isual - **A** uditory - **K** inestetic
+
+
+**Q: What's the basis for the analyis?**
+
+A: Vakity is essentially a programmitic implementation of [Neil Fleming's](http://en.wikipedia.org/wiki/Learning_styles#Neil_Fleming.27s_VAK.2FVARK_model) VARK learning style model

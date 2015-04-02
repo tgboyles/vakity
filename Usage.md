@@ -1,0 +1,19 @@
+# Introduction #
+
+AN ANALYSIS TOOL FOR THE
+VISUAL,
+AUDITORY &
+KINESTHETIC LEARNING STYLES FRAMEWORK
+
+
+# Details #
+
+The VAKITY APP is a tool to help determine a person's learning style using an analysis of their writing.
+
+If you are interested in knowing a person's learning style but are not in a position to have them take one of the freely available self-test, this app may be of use to you. You will need a sample of their writing, as from a long email or personal essay.
+
+The application runs it's analysis based on several sets of keywords and looks for their usage in any writing sample. Therefore the larger the sample, the better.
+
+Knowing a person's learning style may benefit you in the following ways:
+First, if your position requires you to transmit information effectively to others, as in training or sales, you can learn to be more efficient in your approach by tailoring your approach to an individual's learning style.
+Secondly, you can create more rapport with individuals by seeding your communications with more of "their" key words, be those VISUAL, AUDITORY or KINESTHETIC. You can even try it out on yourself by using your own writing sample, although it will be more accurate for you to simple take the test.

@@ -1,0 +1,1 @@
+Vakity is a web service which provides for an extensible learning style analysis of text along a visual-aural-kinesthetic spectrum. It is based on [Neil Fleming's](http://en.wikipedia.org/wiki/Learning_styles#Neil_Fleming.27s_VAK.2FVARK_model) VAK learning style model
